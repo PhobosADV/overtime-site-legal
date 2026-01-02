@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Overtime</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="social-dock">
+    <a href="https://discord.gg/kGC6yN9Ctc" target="_blank" class="social-item discord">
+        <img src="img/discord-icon.png" alt="">
+        <span>Discord</span>
+    </a>
+
+    <a href="https://t.me/nikitaskalk" target="_blank" class="social-item telegram">
+        <img src="img/telegram-icon.png" alt="">
+        <span>Telegram</span>
+    </a>
+
+    <a href="https://vk.com/overtime_i" target="_blank" class="social-item vk">
+        <img src="img/vk-icon.png" alt="">
+        <span>VK</span>
+    </a>
+
+    <a href="https://boosty.to/overtime_i" target="_blank" class="social-item boosty">
+        <img src="img/boosty-icon.png" alt="">
+        <span>Boosty</span>
+    </a>
+</div>
+
+<div class="mobile-bottom-dock">
+    <a href="https://discord.gg/kGC6yN9Ctc" target="_blank" class="mb-item">
+        <img src="img/discord-icon.png" alt="">
+    </a>
+    <a href="https://t.me/nikitaskalk" target="_blank" class="mb-item">
+        <img src="img/telegram-icon.png" alt="">
+    </a>
+    <a href="https://vk.com/overtime_i" target="_blank" class="mb-item">
+        <img src="img/vk-icon.png" alt="">
+    </a>
+    <a href="https://boosty.to/overtime_i" target="_blank" class="mb-item">
+        <img src="img/boosty-icon.png" alt="">
+    </a>
+</div>
+
+<header>
+    <div class="hero fade">
+        <img src="img/logo.png" class="logo" alt="Логотип сервера">
+        <p class="subtitle">Minecraft Java сервер • Версия 1.21.10</p>
+		<div class="hero-socials">
+    <a href="https://discord.gg/kGC6yN9Ctc" target="_blank">
+        <img src="img/discord-icon.png" alt="Discord">
+    </a>
+    <a href="https://t.me/nikitaskalk" target="_blank">
+        <img src="img/telegram-icon.png" alt="Telegram">
+    </a>
+    <a href="https://vk.com/overtime_i" target="_blank">
+        <img src="img/vk-icon.png" alt="VK">
+    </a>
+    <a href="https://boosty.to/overtime_i" target="_blank">
+        <img src="img/boosty-icon.png" alt="Boosty">
+    </a>
+</div>
+
+    </div>
+</header>
+
+<section class="fade">
+    <h2>Режимы сервера</h2>
+
+    <div class="mode">
+        <h3>Овертайм</h3>
+        <p>Ванильное выживание с ивентами и квестами.</p>
+    </div>
+
+    <div class="mode">
+        <h3>Флаги</h3>
+        <p>Мини-режим для двух команд, где нужно победить врага и принести его флаг на базу.</p>
+    </div>
+</section>
+
+<section id="server-status" class="fade">
+    <h2>Онлайн сервера</h2>
+
+    <div class="server-card">
+        <div class="server-left">
+            <div class="status-row">
+                <span id="statusDot" class="status-dot online"></span>
+                <div>
+                    <div class="server-name">
+                        Статус сервера: <span id="serverState">ВКЛЮЧЁН</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uptime-row">
+                <div class="uptime-label">Аптайм</div>
+                <div class="uptime-bar">
+                    <div class="uptime-fill" style="width: 99%;">99%</div>
+                </div>
+            </div>
+
+            <div class="players-row">
+                <div>
+                    Игроков онлайн:
+                    <strong id="playersCount">12</strong>/<span id="playersMax">500</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="server-actions">
+            <button id="checkStatusBtn" class="small-btn">Проверить</button>
+        </div>
+    </div>
+</section>
+
+<section class="fade">
+    <h2>Галерея</h2>
+
+    <div class="gallery-wrapper">
+        <button class="gallery-btn left" onclick="prevSlide()">&lt;</button>
+
+        <div class="gallery">
+            <img src="img/screen1.png" alt="">
+            <img src="img/screen2.png" alt="">
+            <img src="img/screen3.png" alt="">
+        </div>
+
+        <button class="gallery-btn right" onclick="nextSlide()">&gt;</button>
+    </div>
+</section>
+
+<section class="fade">
+    <h2>Персонал сервера</h2>
+
+    <div class="staff-controls">
+        <button id="prevStaffBtn" class="small-btn">&lt;</button>
+        <button id="nextStaffBtn" class="small-btn">&gt;</button>
+    </div>
+
+    <div class="staff-wrapper">
+        <div class="staff">
+            <div class="staff-card">
+                <img src="img/staff/nikitasa.png" alt="">
+                <h4>NikitaSa</h4>
+                <p>Владелец</p>
+            </div>
+
+            <div class="staff-card">
+                <img src="img/staff/facterss.png" alt="">
+                <h4>FacTerss</h4>
+                <p>Владелец</p>
+            </div>
+
+            <div class="staff-card">
+                <img src="img/staff/notwerst.png" alt="">
+                <h4>Notwerst</h4>
+                <p>Куратор</p>
+            </div>
+
+            <div class="staff-card">
+                <img src="img/staff/f1zzen.png" alt="">
+                <h4>F1zzen</h4>
+                <p>Техадмин</p>
+            </div>
+
+            <div class="staff-card">
+                <img src="img/staff/elskrash.png" alt="">
+                <h4>ElsKrash</h4>
+                <p>Техадмин</p>
+            </div>
+
+            <div class="staff-card">
+                <img src="img/staff/igaseyt.png" alt="">
+                <h4>Igaseyt</h4>
+                <p>Техадмин</p>
+            </div>
+
+            <div class="staff-card">
+                <img src="img/staff/shadow_t1me.png" alt="">
+                <h4>Shadow_T1me</h4>
+                <p>Техадмин</p>
+            </div>
+
+            <div class="staff-card">
+                <img src="img/staff/buzzer_da_b.png" alt="">
+                <h4>Buzzer_da_b</h4>
+                <p>Техадмин сайта</p>
+            </div>
+
+            <div class="staff-card">
+                <img src="img/staff/zloybendy.png" alt="">
+                <h4>ZloyBendy</h4>
+                <p>Модератор</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fade">
+    <h2>FAQ</h2>
+
+    <div class="faq">
+        <h4>Как зайти?</h4>
+        <p>На сервере установлен вайтлист. Для захода необходимо написать в Telegram бота @NikitaStreamBOT.</p>
+    </div>
+
+    <div class="faq">
+        <h4>Нужна ли лицензия?</h4>
+        <p>Лицензия для игры на сервере не обязательна.</p>
+    </div>
+
+    <div class="faq">
+        <h4>Куда писать в случае проблемы?</h4>
+        <p>В Discord сервере есть система тикетов для связи с администрацией.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="credits">
+        <img src="img/credits.png" id="creditIcon" alt="">
+        <span>prod. Buzzer_da_b</span>
+    </div>
+</footer>
+
+<audio id="creditSound" src="sounds/click.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
